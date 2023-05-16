@@ -1,0 +1,18 @@
+[package]
+name = "cube"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.9"
+rocket_codegen = "*"
+rusqlite = "*"
+serde="*"
+serde_json = "1.0"
+
+[dependencies.rocket_contrib]
+version = "*"
+features = ["handlebars_templates"]
+

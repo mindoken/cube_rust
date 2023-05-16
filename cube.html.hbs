@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cube</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cube</h1>
+    <canvas id="canvas" width="1080" height="600"></canvas>
+    <script >
+        var vertices = [
+            {{#each vertices}}
+                {{this}}, 
+            {{/each}}
+        ];
+
+        var indices = [
+            {{#each indices}}
+                {{this}}, 
+            {{/each}}
+        ];
+
+        var rotation = {{rotation}};
+
+        init(vertices, indices, rotation);
+
+        
+    </script>
+
+    
+</body>
+</html>
+
